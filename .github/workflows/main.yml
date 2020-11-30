@@ -17,7 +17,7 @@ jobs:
       - run: flutter pub get
       - run: flutter build web --release
       - run: cp -R build/web/* firebase_flutterandpython/public/
-      - uses: flutter_web_3/firebase-action@master
+      - uses: sergei.ulvis/firebase-action@master
         with:
           args: deploy --only hosting
         env:
